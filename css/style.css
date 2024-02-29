@@ -9,6 +9,9 @@ img{
     width: 100%;
 }
 /* COMMON */
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Open Sans', sans-serif
 }
@@ -247,6 +250,12 @@ input[type="radio"] {
     background-color: var(--azure);
 }
 
+/* debug */
+.faq{
+    /* debug */
+    background-color: chocolate;
+    height: 200px;
+}
 /* FOOTER */
 footer{
 
