@@ -8,3 +8,101 @@
 img{
     width: 100%;
 }
+/* COMMON */
+.big-cont{
+    width: 65%;
+    margin: 0 auto;
+}
+.small-cont{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* utilities */
+.flex{
+    display: flex;
+}
+.main-algn{
+    justify-content: center;
+}
+.crss-align{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+/* HEADER */
+header{
+    height: 60px;
+    width: 100%;
+    max-width: 1500px;
+    justify-content: space-between;
+
+    /* debug */
+    background-color: #d3d3d3;
+}
+
+.header-col{
+    width: 30%;
+
+    /* debug */
+    background-color: gray;
+}
+
+/* MAIN */
+
+/* landing */
+.landing{
+    background-color: #B4D0E7;
+
+    /* debug */
+    height: 400px;
+}
+.hero{
+    background-color: red;
+    height: 100%;
+}
+
+/* sub-plans */
+
+.plans{
+    
+    /* debug */
+    min-height: 400px;
+    background-color: blueviolet;
+}
+
+.billing_type{
+    /* debug */
+    background-color: blue;
+    border: 2px solid black;
+    height: 100px;
+}
+
+.main_plans{
+
+    /* debug */
+    height: 400px;
+    background-color: blue;
+    border: 2px solid black;
+
+}
+
+.plan_card{
+    width: 100%;
+    /* debug */
+    height: 100%;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.enterprise_plans{
+
+    /* debug */
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+
+}
