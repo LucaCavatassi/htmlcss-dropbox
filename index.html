@@ -17,7 +17,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="flex">
+    <header class="flex space">
         <!-- LEFTCOL -->
         <div class="header-col flex">
             <img src="./img/logo-small.png" alt="Dropbox Small Logo">
@@ -29,7 +29,7 @@
         </div>
         <!-- /LEFTCOL -->
         <!-- RIGHTCOL -->
-        <div class="header-col flex crss-align end">
+        <div class="header-col flex crss-align">
             <ul class="flex crss-align">
                 <li><a href="">Supporto</a></li>
                 <li><a href="">Contatta l'ufficio vendite</a></li>
@@ -64,8 +64,18 @@
 
         <!-- SECTION -->
         <section class="plans small-cont">
-            <div class="billing_type border">
-
+            <div class="billing_type">
+                <h2>Trova il piano business che fa per te</h2>
+                <div class="bill_select flex">
+                    <div class="radio">
+                        <input type="radio" value="bill" name="billing">
+                        <label for="bill">Fatturazione Mensile</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" value="bill" name="billing">
+                        <label for="bill">Fatturazione Annuale</label>
+                    </div>   
+                </div>
             </div>
             <div class="main_plans border flex">
                 <div class="plan_card border">

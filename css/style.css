@@ -13,11 +13,11 @@ body{
     font-family: 'Open Sans', sans-serif
 }
 .big-cont{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 .small-cont{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -69,6 +69,9 @@ li{
 }
 .end{
     justify-content: end;
+}
+.space{
+    justify-content: space-between;
 }
 :root{
     --azure: #B4D0E7;
@@ -154,21 +157,33 @@ header{
 }
 .hero-r-col img{
     position: absolute;
-    width: 125%;
+    width: 105%;
 }
 
 
 /* sub-plans */
 
 .plans{   
-    /* debug */
-    min-height: 400px;
-    background-color: blueviolet;
+    padding-top: 100px;
 }
+.billing_type h2{
+    padding-bottom: 20px;
+}
+.bill_select {
+    font-size: 0.7rem;
+    padding: 20px 0;
+}
+input[type="radio"] {
+    vertical-align: middle;
+    accent-color: var(--blue);
+}
+.radio{
+    padding-right: 50px;
+}
+
 
 .billing_type{
     /* debug */
-    background-color: blue;
     height: 100px;
 }
 .main_plans{
