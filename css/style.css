@@ -9,6 +9,9 @@ img{
     width: 100%;
 }
 /* COMMON */
+body{
+    font-family: 'Open Sans', sans-serif
+}
 .big-cont{
     width: 65%;
     margin: 0 auto;
@@ -33,6 +36,19 @@ img{
     height: 200px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+a:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
 /* utilities */
 .flex{
     display: flex;
@@ -46,11 +62,24 @@ img{
 .wrap{
     flex-wrap: wrap;
 }
-
+.end{
+    justify-content: end;
+}
 :root{
     --azure: #B4D0E7;
     --blue: #0061FF;
     --bordeaux: #61082B;
+}
+
+.button{
+    background-color: var(--blue);
+    margin-right: 10px;
+}
+.button a{
+    padding: 4px;
+}
+.white{
+    color: white;
 }
 /* debug utilities */
 .border{
@@ -58,23 +87,28 @@ img{
 }
 /* HEADER */
 header{
-    height: 60px;
+    height: 40px;
     width: 100%;
     max-width: 1500px;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
-
-    /* debug */
-    background-color: #d3d3d3;
+    background-color: white;
 }
 
 .header-col{
-    width: 30%;
-
-    /* debug */
-    background-color: gray;
+    width: 40%;
 }
+.header-col img{
+    width: 90px;
+    align-self: center;
+    padding: 0 10px; 
+}
+.header-col li{
+    font-size: 0.6rem;
+    padding: 0 10px;
+}
+
 
 /* MAIN */
 
