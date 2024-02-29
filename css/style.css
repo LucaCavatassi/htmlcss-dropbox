@@ -13,7 +13,7 @@ body{
     font-family: 'Open Sans', sans-serif
 }
 .big-cont{
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
 }
 .small-cont{
@@ -53,6 +53,11 @@ li{
 .flex{
     display: flex;
 }
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
 .main-algn{
     justify-content: center;
 }
@@ -69,15 +74,12 @@ li{
     --azure: #B4D0E7;
     --blue: #0061FF;
     --bordeaux: #61082B;
+    --header-h: 40px;
 }
-
 .button{
     background-color: var(--blue);
-    margin-right: 10px;
 }
-.button a{
-    padding: 4px;
-}
+
 .white{
     color: white;
 }
@@ -87,7 +89,7 @@ li{
 }
 /* HEADER */
 header{
-    height: 40px;
+    height: 50px;
     width: 100%;
     max-width: 1500px;
     justify-content: space-between;
@@ -96,33 +98,65 @@ header{
     background-color: white;
 }
 
-.header-col{
-    width: 40%;
-}
 .header-col img{
-    width: 90px;
+    width: 100px;
     align-self: center;
     padding: 0 10px; 
 }
 .header-col li{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding: 0 10px;
 }
-
+.header-col .button{
+    margin-right: 10px;
+}
+.button a{
+    padding: 4px;
+}
 
 /* MAIN */
 
 /* landing */
 .landing{
     background-color: var(--azure);
-
-    /* debug */
-    height: 400px;
+    padding-top: var(--header-h);
 }
 .hero{
-    background-color: red;
     height: 100%;
+    padding: 50px 15px 15px 20px;
 }
+.hero h1{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.heroinfograph{
+    font-size: 0.7rem;
+}
+.hero-l-col{
+    width: 30%;
+    gap: 20px;
+    align-items: start;
+}
+.hero-l-col p{
+    margin-bottom: 40px;
+}
+.hero-l-col .button{
+    padding: 10px;
+}
+.hero-l-col i{
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.hero-r-col{
+    width: 70%;
+    position: relative;
+}
+.hero-r-col img{
+    position: absolute;
+    width: 125%;
+}
+
 
 /* sub-plans */
 
