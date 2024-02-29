@@ -164,7 +164,7 @@ header{
 }
 
 
-/* sub-plans */
+/* plan-section */
 
 .plans{   
     padding-top: 100px;
@@ -173,7 +173,7 @@ header{
     padding-bottom: 20px;
 }
 .bill_select {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 20px 0;
 }
 input[type="radio"] {
@@ -184,34 +184,121 @@ input[type="radio"] {
     padding-right: 50px;
 }
 
-
-.billing_type{
-    /* debug */
-    height: 100px;
-}
+/* planstypes */
 .main_plans{
-
+    margin-bottom: 200px;
     /* debug */
     height: 400px;
-    background-color: blue;
-
-
 }
 .enterprise_plans{
-
+    
     /* debug */
-    height: 100px;
+    min-height: 100px;
     background-color: blue;
-
 }
 
 .plan_card{
     width: 100%;
-    /* debug */
-    height: 100%;
-    background-color: lightblue;
+    font-size: 0.7rem;
+}
+.plan_type{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-bottom: hidden;
+}
+.plan_description{
+    padding: 20px 15px;
+    border: 1px solid lightgray;
+}
+.plan_description h4{
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.bill_time{
+    color: gray;
+}
+.price{
+    padding-bottom: 25px;
+    gap: 10px;
+}
+.features li{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: left;
+    position: relative;
 }
 
+.features li:nth-child(1)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f007";
+    font-weight: 900;
+    padding-right: 3px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.features li:nth-child(2)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f07b";
+    font-weight: 900;
+    padding-right: 2px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.features li:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f1e0";
+    font-weight: 900;
+    padding-right: 2px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.trynow{
+    margin-top: 25px;
+    padding: 5px 10px; 
+}
+
+.shopnow{
+    padding: 20px 0;
+}
+.shopnow a{
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.plan_highlights h5{
+    font-size: 0.7rem;
+    padding: 20px 0;
+}
+.plan_highlights li{
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+.plan_highlights li:nth-child(1)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    color: var(--blue);
+    font-weight: 900;
+    padding-right: 2px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.plan_highlights li:nth-child(2)::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    color: var(--blue);
+    font-weight: 900;
+    padding-right: 2px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
 /* description section */
 .disclaimer{
     /* debug */
