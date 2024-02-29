@@ -18,6 +18,21 @@ img{
     margin: 0 auto;
 }
 
+.leftcol{
+    width: 60%;
+
+    /* debug */
+    background-color: violet;
+    height: 200px;
+}
+.rightcol{
+    width: 40%;
+
+    /* debug */
+    background-color: palegreen;
+    height: 200px;
+}
+
 /* utilities */
 .flex{
     display: flex;
@@ -32,13 +47,23 @@ img{
     flex-wrap: wrap;
 }
 
-
+:root{
+    --azure: #B4D0E7;
+    --blue: #0061FF;
+    --bordeaux: #61082B;
+}
+/* debug utilities */
+.border{
+    border: 2px solid black;
+}
 /* HEADER */
 header{
     height: 60px;
     width: 100%;
     max-width: 1500px;
     justify-content: space-between;
+    position: fixed;
+    z-index: 10;
 
     /* debug */
     background-color: #d3d3d3;
@@ -55,7 +80,7 @@ header{
 
 /* landing */
 .landing{
-    background-color: #B4D0E7;
+    background-color: var(--azure);
 
     /* debug */
     height: 400px;
@@ -67,8 +92,7 @@ header{
 
 /* sub-plans */
 
-.plans{
-    
+.plans{   
     /* debug */
     min-height: 400px;
     background-color: blueviolet;
@@ -77,16 +101,21 @@ header{
 .billing_type{
     /* debug */
     background-color: blue;
-    border: 2px solid black;
     height: 100px;
 }
-
 .main_plans{
 
     /* debug */
     height: 400px;
     background-color: blue;
-    border: 2px solid black;
+
+
+}
+.enterprise_plans{
+
+    /* debug */
+    height: 100px;
+    background-color: blue;
 
 }
 
@@ -95,14 +124,63 @@ header{
     /* debug */
     height: 100%;
     background-color: lightblue;
-    border: 1px solid black;
 }
 
-.enterprise_plans{
+/* description section */
+.disclaimer{
+    /* debug */
+    background-color: aqua;
+    height: 50px;
+}
+
+.infocard{
+    width: calc(100% / 3);
+    /* debug */
+    background-color: brown;
+    height: 200px;
+}
+
+.discovermore{
+    /* debug */
+    background-color: aqua;
+    height: 100px;
+}
+
+/* brand ambassadors */
+.brand-card{
+    width: calc(100%/3);
+    aspect-ratio: 1;
+    /* debug */
+    background-color: chartreuse;
+}
+
+.sub-brand{
+    width: calc(100% / 2);
+    aspect-ratio: 1;
+}
+
+/* free-trial */
+.free_trial{
+    background-color: var(--azure);
+}
+
+/* FOOTER */
+footer{
 
     /* debug */
-    height: 100px;
-    background-color: blue;
-    border: 2px solid black;
+    background-color: yellowgreen;
+    height: auto;
+}
 
+.links{
+    width: calc(100% / 5);
+    /* debug */
+    height: 100px;
+
+}
+
+.languages{
+
+    /* debug */
+    height: 40px;
 }
