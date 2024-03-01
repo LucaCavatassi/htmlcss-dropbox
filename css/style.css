@@ -384,16 +384,71 @@ input[type="radio"] {
     padding: 20px 0;
 }
 /* brand ambassadors */
-.brand-card{
-    width: calc(100%/3);
-    aspect-ratio: 1;
-    /* debug */
-    background-color: chartreuse;
-}
 
+.brand-card-l, .brand-card-r, .brand-card{
+    width: calc(100%/3);
+    aspect-ratio: 1 / 1;
+}
+.brand-card{
+    padding: 40px;
+    background-color: rgb(245 245 245);
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+.brand-card img{
+    width: 50%;
+    padding-bottom: 20px;
+}
+.brand-card hr{
+    width: 20%;
+    border: 0.5px solid lightgray;
+}
+.brand-card p{
+    padding: 20px 0;
+}
+.brand-card span{
+    padding: 20px 0;
+}
 .sub-brand{
     width: calc(100% / 2);
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
+}
+.sub-brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    scale: 0.5;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(296deg) brightness(121%) contrast(90%);  
+}
+
+/* brand cards bg l */
+.brand-card-l .sub-brand:nth-child(1){
+    background-color: rgb(162 211 155);
+    border: 10px solid rgb(210 233 205);
+}
+.brand-card-l .sub-brand:nth-child(2){
+    background-color: rgb(98 9 43);
+}
+.brand-card-l .sub-brand:nth-child(3){
+    background-color: rgb(0 147 206);
+}
+.brand-card-l .sub-brand:nth-child(4){
+    background-color: rgb(255 27 28);
+}
+
+/* brands car bg l */
+.brand-card-r .sub-brand:nth-child(1){
+    background-color: rgb(213 0 32);
+}
+.brand-card-r .sub-brand:nth-child(2){
+    background-color: rgb(180 208 231);
+}
+.brand-card-r .sub-brand:nth-child(3){
+    background-color: rgb(13 36 129);
+}
+.brand-card-r .sub-brand:nth-child(4){
+    background-color: rgb(255 216 48);
 }
 
 /* free-trial */
