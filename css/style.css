@@ -13,12 +13,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 .big-cont{
     width: 70%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
+    
 }
 .small-cont{
     width: 60%;
@@ -79,6 +80,9 @@ li{
     justify-content: space-between;
 }
 
+.grow{
+    flex-grow: 1;
+}
 
 :root{
     --azure: #B4D0E7;
@@ -163,13 +167,14 @@ header{
 }
 .hero-r-col img{
     position: absolute;
+    max-height: 350px;
 }
 
 
 /* PLANS */
 
 .billing{   
-    padding-top: 150px;
+    padding-top: 120px;
 }
 .billing_type h2{
     padding-bottom: 20px;
@@ -186,18 +191,15 @@ input[type="radio"] {
     padding-right: 50px;
 }
 
-/* planstypes */
+/* MAINPLANS */
 .main_plans{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     gap: 20px;
 }
-.enterprise_plans{
-    /* debug */
-    min-height: 100px;
-    background-color: blue;
-}
+
 .plan_card{
     font-size: 0.7rem;
+    width: calc(100% / 3);
 }
 
 /* upper */
@@ -212,7 +214,6 @@ input[type="radio"] {
 .plan_description{
     padding: 20px 15px;
     border: 1px solid lightgray;
-    flex-grow: 1;
 }
 .plan_description h4{
     font-size: 1rem;
@@ -232,6 +233,11 @@ input[type="radio"] {
     padding-left: 15px;
     text-align: left;
     position: relative;
+}
+
+/* non so se tenere */
+.features ul{
+    max-height: 185px;
 }
 /* custom icons central-list */
 .features li:nth-child(1)::before{
@@ -312,7 +318,22 @@ input[type="radio"] {
     border: 0.5px solid lightgray;
 }
 
-
+/* ENTERPRISE PLANS */
+.enterprise_plans > *:not(h4){
+    font-size: 0.8rem;
+}
+.enterprise_plans .button{
+    padding: 3px 10px;
+}
+.bttn_noshrink{
+    align-items: flex-start;
+}
+.plan_description .flexcol :last-child{
+    padding-top: 30px;
+}
+.en-l-col{
+    width: 70%;
+}
 /* DESCRIPTION-SECTION */
 .disclaimer{
     /* debug */
