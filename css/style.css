@@ -352,26 +352,37 @@ input[type="radio"] {
 }
 
 
-/* DESCRIPTION-SECTION */
-.disclaimer{
-    /* debug */
-    background-color: aqua;
-    height: 50px;
+/* FUNCTIONS-SECTION */
+.description{
+    margin-top: 100px;
 }
-
+.disclaimer{
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
 .infocard{
-    width: calc(100% / 3);
-    /* debug */
-    background-color: brown;
-    height: 200px;
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+}
+.infocard p{
+    font-size: 0.8rem;
+}
+.infocard h3{
+    padding-bottom: 20px;
 }
 
 .discovermore{
-    /* debug */
-    background-color: aqua;
-    height: 100px;
+    margin: 100px 0;
 }
-
+.discovermore h2{
+    padding: 20px 0;
+    font-size: 1.8rem;
+}
+.discovermore a{
+    text-decoration: underline;
+    color: var(--blue);
+    padding: 20px 0;
+}
 /* brand ambassadors */
 .brand-card{
     width: calc(100%/3);
