@@ -78,6 +78,8 @@ li{
 .space{
     justify-content: space-between;
 }
+
+
 :root{
     --azure: #B4D0E7;
     --blue: #0061FF;
@@ -186,10 +188,8 @@ input[type="radio"] {
 
 /* planstypes */
 .main_plans{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     gap: 20px;
-    /* debug */
-    height: 400px;
 }
 .enterprise_plans{
     /* debug */
@@ -197,7 +197,6 @@ input[type="radio"] {
     background-color: blue;
 }
 .plan_card{
-
     font-size: 0.7rem;
 }
 
@@ -213,6 +212,7 @@ input[type="radio"] {
 .plan_description{
     padding: 20px 15px;
     border: 1px solid lightgray;
+    flex-grow: 1;
 }
 .plan_description h4{
     font-size: 1rem;
@@ -296,7 +296,7 @@ input[type="radio"] {
     text-align: left;
 }
 /* custom-icons bottom */
-.plan_highlights li:nth-child(1)::before{
+.plan_highlights li::before{
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
     color: var(--blue);
@@ -306,17 +306,6 @@ input[type="radio"] {
     left: 0;
     top: 2px;
 }
-.plan_highlights li:nth-child(2)::before{
-    font-family: "Font Awesome 5 Free";
-    content: "\f00c";
-    color: var(--blue);
-    font-weight: 900;
-    padding-right: 2px;
-    position: absolute;
-    left: 0;
-    top: 2px;
-}
-
 /* custom hr */
 .line{
     width: 20%;
