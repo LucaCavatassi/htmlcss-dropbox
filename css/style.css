@@ -97,7 +97,7 @@ li{
 header{
     height: 50px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
@@ -122,7 +122,7 @@ header{
 
 /* MAIN */
 
-/* landing */
+/* LANDING */
 .landing{
     background-color: var(--azure);
     padding-top: var(--header-h);
@@ -164,10 +164,10 @@ header{
 }
 
 
-/* plan-section */
+/* PLANS */
 
 .plans{   
-    padding-top: 100px;
+    padding-top: 150px;
 }
 .billing_type h2{
     padding-bottom: 20px;
@@ -191,22 +191,24 @@ input[type="radio"] {
     height: 400px;
 }
 .enterprise_plans{
-    
     /* debug */
     min-height: 100px;
     background-color: blue;
 }
-
 .plan_card{
     width: 100%;
     font-size: 0.7rem;
 }
+
+/* upper */
 .plan_type{
     text-align: center;
     padding: 5px;
     border: 1px solid lightgray;
     border-bottom: hidden;
 }
+
+/* central */
 .plan_description{
     padding: 20px 15px;
     border: 1px solid lightgray;
@@ -222,13 +224,15 @@ input[type="radio"] {
     padding-bottom: 25px;
     gap: 10px;
 }
+
+/*  central-list */
 .features li{
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: left;
     position: relative;
 }
-
+/* custom icons central-list */
 .features li:nth-child(1)::before{
     font-family: "Font Awesome 5 Free";
     content: "\f007";
@@ -256,11 +260,12 @@ input[type="radio"] {
     left: 0;
     top: 2px;
 }
+
+/* trynow-shopnow */
 .trynow{
     margin-top: 25px;
     padding: 5px 10px; 
 }
-
 .shopnow{
     padding: 20px 0;
 }
@@ -269,6 +274,7 @@ input[type="radio"] {
     color: var(--blue);
 }
 
+/*bottom */
 .plan_highlights h5{
     font-size: 0.7rem;
     padding: 20px 0;
@@ -279,6 +285,7 @@ input[type="radio"] {
     padding-left: 15px;
     text-align: left;
 }
+/* custom-icons bottom */
 .plan_highlights li:nth-child(1)::before{
     font-family: "Font Awesome 5 Free";
     content: "\f00c";
@@ -299,7 +306,15 @@ input[type="radio"] {
     left: 0;
     top: 2px;
 }
-/* description section */
+
+/* custom hr */
+.line{
+    width: 20%;
+    border: 0.5px solid lightgray;
+}
+
+
+/* DESCRIPTION-SECTION */
 .disclaimer{
     /* debug */
     background-color: aqua;
