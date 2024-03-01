@@ -6,7 +6,7 @@
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 /* COMMON */
 html{
@@ -17,10 +17,12 @@ body{
 }
 .big-cont{
     width: 70%;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .small-cont{
     width: 60%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -97,7 +99,6 @@ li{
 header{
     height: 50px;
     width: 100%;
-    max-width: 1600px;
     justify-content: space-between;
     position: fixed;
     z-index: 10;
@@ -160,13 +161,12 @@ header{
 }
 .hero-r-col img{
     position: absolute;
-    width: 105%;
 }
 
 
 /* PLANS */
 
-.plans{   
+.billing{   
     padding-top: 150px;
 }
 .billing_type h2{
@@ -187,6 +187,7 @@ input[type="radio"] {
 /* planstypes */
 .main_plans{
     margin-bottom: 200px;
+    gap: 20px;
     /* debug */
     height: 400px;
 }
@@ -196,7 +197,7 @@ input[type="radio"] {
     background-color: blue;
 }
 .plan_card{
-    width: 100%;
+
     font-size: 0.7rem;
 }
 
@@ -259,6 +260,15 @@ input[type="radio"] {
     position: absolute;
     left: 0;
     top: 2px;
+}
+.features #teamicon::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c0";
+    font-weight: 900;
+    padding-right: 2px;
+    position: absolute;
+    left: -1px;
+    top: 3px;
 }
 
 /* trynow-shopnow */
