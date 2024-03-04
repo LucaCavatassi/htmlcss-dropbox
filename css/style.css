@@ -75,6 +75,9 @@ li{
 .grow{
     flex-grow: 1;
 }
+.flex-start{
+    align-items: flex-start;
+}
 
 /* variables */
 :root{
@@ -87,6 +90,9 @@ li{
 /* font colors and button looks */
 .button{
     background-color: var(--blue);
+}
+.button_bottom{
+    background-color: white;
 }
 .white{
     color: white;
@@ -437,7 +443,7 @@ input[type="radio"] {
     background-color: rgb(255 27 28);
 }
 
-/* brands car bg l */
+/* brands car bg r */
 .brand-card-r .sub-brand:nth-child(1){
     background-color: rgb(213 0 32);
 }
@@ -454,9 +460,18 @@ input[type="radio"] {
 /* free-trial */
 .free_trial{
     background-color: var(--azure);
+    padding: 100px 0;
+}
+.free_trial h2{
+    color: var(--bordeaux);
+}
+.free_trial .button_bottom{
+    font-size: 0.8rem;
+    padding: 10px 0;
+    padding-inline: 40px;
 }
 
-/* debug */
+
 .faq{
     /* debug */
     background-color: chocolate;
