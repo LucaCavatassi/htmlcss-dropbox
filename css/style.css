@@ -471,12 +471,49 @@ input[type="radio"] {
     padding-inline: 40px;
 }
 
-
+/* faq */
 .faq{
+    padding: 50px 0;
     /* debug */
-    background-color: chocolate;
-    height: 200px;
+    height: 500px;
 }
+.faq_title{
+    padding: 20px 0;
+}
+.faq hr{
+    margin: 15px 0;
+}
+.faq_text p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+}
+.faq_content{
+    position: relative;
+}
+.chevron_up{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.faq_text{
+    display: none;
+    transition: 5s;
+}
+.faq_sub_title{
+    padding: 10px 0;
+}
+.faq_sub_title:hover + .faq_text{
+    display: block;
+}
+.faq_sub_title:hover .chevron_up{
+    display: block;
+}
+.faq_sub_title:hover .chevron_down{
+    display: none;
+}
+
+
 /* FOOTER */
 footer{
 
