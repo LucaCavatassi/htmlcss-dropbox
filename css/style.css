@@ -85,6 +85,7 @@ li{
     --blue: #0061FF;
     --bordeaux: #61082B;
     --header-h: 40px;
+    --hoverblue: #3f87fb;
 }
 
 /* font colors and button looks */
@@ -94,20 +95,31 @@ li{
 .button_bottom{
     background-color: white;
 }
+.button:hover{
+    background-color: var(--hoverblue);
+}
 .white{
     color: white;
 }
-/* debug */
-.border{
-    border: 2px solid black;
+/* padding */
+.p-y-20{
+    padding: 20px 0;
 }
-
+.p-x-10{
+    padding: 0 10px;
+}
+.p-b-20{
+    padding-bottom: 20px;
+}
+/* font-size */
+.smaller_font{
+    font-size: 0.7rem;
+}
 
 /* HEADER */
 header{
     height: 50px;
     width: 100%;
-    justify-content: space-between;
     position: fixed;
     z-index: 10;
     background-color: white;
@@ -115,17 +127,32 @@ header{
 .header-col img{
     width: 100px;
     align-self: center;
-    padding: 0 10px; 
-}
-.header-col li{
-    font-size: 0.7rem;
-    padding: 0 10px;
 }
 .header-col .button{
     margin-right: 10px;
 }
 .button a{
     padding: 4px;
+}
+.underline{
+    display: inline-block;
+    position: relative;
+}
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 31px;
+    left: 0;
+    background-color:var(--blue);
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
 }
 
 /* MAIN */
@@ -142,10 +169,6 @@ header{
 .hero h1{
     font-size: 3rem;
     font-weight: 800;
-    padding-bottom: 20px;
-}
-.heroinfograph{
-    font-size: 0.7rem;
 }
 .hero-l-col{
     width: 30%;
@@ -176,12 +199,8 @@ header{
 .billing{   
     padding-top: 120px;
 }
-.billing_type h2{
-    padding-bottom: 20px;
-}
 .bill_select {
     font-size: 0.8rem;
-    padding: 20px 0;
 }
 /* radiobutton */
 input[type="radio"] {
@@ -191,17 +210,14 @@ input[type="radio"] {
 .radio{
     padding-right: 50px;
 }
-
 /* main containers */
 .main_plans{
     margin-bottom: 20px;
     gap: 20px;
 }
 .plan_card{
-    font-size: 0.7rem;
     width: calc(100% / 3);
 }
-
 /* plans-upper */
 .plan_type{
     text-align: center;
@@ -209,7 +225,6 @@ input[type="radio"] {
     border: 1px solid lightgray;
     border-bottom: hidden;
 }
-
 /* plans-central */
 .plan_description{
     padding: 20px 15px;
@@ -226,17 +241,12 @@ input[type="radio"] {
     padding-bottom: 25px;
     gap: 10px;
 }
-
 /* plans-central_list */
 .features li{
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: left;
     position: relative;
-}
-/* keep? */
-.features ul{
-    max-height: 185px;
 }
 /* custom icons central-list */
 .features li:nth-child(1)::before{
@@ -275,32 +285,22 @@ input[type="radio"] {
     left: -1px;
     top: 3px;
 }
-
 /* plans-trynow_shopnow */
 .trynow{
     margin-top: 25px;
     padding: 5px 10px; 
 }
-.shopnow{
-    padding: 20px 0;
-}
 .shopnow a{
     text-decoration: underline;
     color: var(--blue);
 }
-
 /* plans bottom list*/
-.plan_highlights h5{
-    font-size: 0.7rem;
-    padding: 20px 0;
-}
 .plan_highlights li{
     position: relative;
     padding-bottom: 15px;
     padding-left: 15px;
     text-align: left;
 }
-
 /* pans bottom-custom-icons*/
 .plan_highlights li::before{
     font-family: "Font Awesome 5 Free";
@@ -312,7 +312,6 @@ input[type="radio"] {
     left: 0;
     top: 2px;
 }
-
 /* plans custom hr */
 .line{
     width: 20%;
@@ -320,14 +319,8 @@ input[type="radio"] {
 }
 
 /* ENTERPRISE PLANS */
-.enterprise_plans > *:not(h4){
-    font-size: 0.8rem;
-}
 .enterprise_plans .button{
     padding: 3px 10px;
-}
-.bttn_noshrink{
-    align-items: flex-start;
 }
 .plan_description .flexcol :last-child{
     padding-top: 30px;
@@ -349,9 +342,6 @@ input[type="radio"] {
 .contact{
     padding: 25px;
 }
-.contact>*{
-    padding-bottom: 20px;
-}
 .contact a{
     border: 1px solid black;
     padding: 10px;
@@ -364,7 +354,6 @@ input[type="radio"] {
 }
 .disclaimer{
     font-size: 1.3rem;
-    padding: 20px 0;
 }
 .infocard{
     width: calc(100% / 3 - 30px);
@@ -373,21 +362,15 @@ input[type="radio"] {
 .infocard p{
     font-size: 0.8rem;
 }
-.infocard h3{
-    padding-bottom: 20px;
-}
-
 .discovermore{
     margin: 100px 0;
 }
 .discovermore h2{
-    padding: 20px 0;
     font-size: 1.8rem;
 }
 .discovermore a{
     text-decoration: underline;
     color: var(--blue);
-    padding: 20px 0;
 }
 /* brand ambassadors */
 
@@ -398,22 +381,14 @@ input[type="radio"] {
 .brand-card{
     padding: 40px;
     background-color: rgb(245 245 245);
-    font-size: 0.7rem;
     font-weight: 200;
 }
 .brand-card img{
     width: 50%;
-    padding-bottom: 20px;
 }
 .brand-card hr{
     width: 20%;
     border: 0.5px solid lightgray;
-}
-.brand-card p{
-    padding: 20px 0;
-}
-.brand-card span{
-    padding: 20px 0;
 }
 .sub-brand{
     width: calc(100% / 2);
@@ -473,9 +448,7 @@ input[type="radio"] {
 
 /* faq */
 .faq{
-    padding: 50px 0;
-    /* debug */
-    height: 500px;
+    padding: 80px 0;
 }
 .faq_title{
     padding: 20px 0;
@@ -486,7 +459,6 @@ input[type="radio"] {
 .faq_text p{
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 0.7rem;
 }
 .faq_content{
     position: relative;
@@ -516,21 +488,28 @@ input[type="radio"] {
 
 /* FOOTER */
 footer{
-
-    /* debug */
-    background-color: yellowgreen;
-    height: auto;
+    background-color: black;
 }
 
 .links{
-    width: calc(100% / 5);
-    /* debug */
-    height: 100px;
-
+    width: calc(70% / 5);
+    padding: 50px 0;
 }
 
+.links li{
+    padding-bottom: 10px;
+}
+.various hr{
+    color: white;
+    width: 10%;
+    border: 0.5px solid white;
+}
 .languages{
-
-    /* debug */
-    height: 40px;
+    gap: 5px;
+    padding-bottom: 40px;
+    font-size: 0.8rem;
+    color: lightgray;
+}
+.languages span{
+    font-size: 0.6rem;
 }
